@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Tourism Website design</title>
+    <link rel="stylesheet" href="style9.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+    <div>
+    <section class="header">
+       <nav>
+        <a href="/home"><img src="logo2.png"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+
+            <ul>
+                <li><a = href="/home">HOME</a></li>
+                <li><a = href="about.html">ABOUT</a></li>
+                <li><a = href="contactus.html">CONTACT US</a></li>
+                <li><form id="logout" action="/logout" method="post"><button type="logout" name="logout">LOGOUT</button></form><li>
+            </ul>
+
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+       </nav> 
+    </div>
+    <div>
+        <pre>
+            <div class="text-box">
+                <h1>PLACES TO VISIT</h1>
+                <!--<p>A guide for must visit places</p>-->
+            </pre>
+            </div>
+
+        <!-----Popular City Menu----->
+
+        <div class="cities">
+            <!-- <h1>Popular Cities</h1>
+            <p>Some of India's most frequently visited cities</p> -->
+
+            <div class = "row">
+                <div class="city-col">
+                    <img src="amer.jpg">
+                    <h3>AMER FORT</h3>
+                    <p> Cradled on the top of a hill near Jaipur lies the Amer Fort, one of the most magnificent palaces in India. Also commonly known as the Amber Fort, this majestic building with its maze-like passagesers.     </p>
+                    </div>
+               <div class="city-col">
+                   <img src="jantarmantar.jpg">
+                  <h3>JANTAR MANTAR JAIPUR</h3>
+                   <p> Located near the City Palace in the regal city of Jaipur, Jantar Mantar is the largest stone astronomical observatory in the world. Owing to its rich cultural, heritage and scientific value, Jantar Mantar in Jaipur has also been featured on UNESCO's list of World Heritage Sites </p>
+               </div>
+               <div class="city-col">
+                   <img src="hawa.jpg">
+                   <h3>HAWA MAHAL</h3>
+                   <p> urThe massive edifice of Hawa Mahal stands at the intersection of the main road in Jaipur, Badi Chaupad and was built by Maharaja Sawai Pratap Singh in the year 1799. Hawa Mahal derives its name from its unique structe .</p> 
+               </div>
+           </div>
+
+           <div class="row2">
+               <div class="city-colu">
+                   <img src="citypalace.jpg">
+                  <h3>CITY  PALACE</h3>
+                    <p>The magnificent City Palace in Jaipur is one of the most famous tourist attractions located in the old part of the city. Built by Maharaja Sawai Jai Singh during the years 1729 to 1732, the vast complex of the palace occupied one-seventh of the walled city</p>
+                    </div>
+               <div class="city-colu">
+                   <img src="albert.jpg">
+                   <h3>ALBERT HALL MUSEUM</h3>
+                   <p>
+               <div class="city-colu">
+                   <img src="planmytrip.png"><h3>Plan My Trip</h3>
+                   <a href="jaipur-rail-map.html"><img src="https://imgs.search.brave.com/yNkE_kZQ-DZ2hFzCfErTCATOI0sftC1OgTo9z_ltL_I/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9sb2dv/cy1kb3dubG9hZC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTkvMTEvSW5kaWFu/X1JhaWx3YXlfTG9n/b18yLTcwMHg3MDAu/cG5n" alt="train" id="trains"></a>
+                   <a href="jaipur-air-map.html"><img src="https://imgs.search.brave.com/ZYJq-uXOYtTQuTnM5YEwuDV4krFtnfh2yrkZqXBBO_k/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTQx/NDE2MDgwOS92ZWN0/b3IvYWlycGxhbmUt/aWNvbi1wbGFuZS1m/bGlnaHQtcGljdG9n/cmFtLXRyYW5zcG9y/dC1zeW1ib2wtdHJh/dmVsLmpwZz9zPTYx/Mng2MTImdz0wJms9/MjAmYz1CdGdKVlcx/UlE5YTRpOHNUTW0t/VWstSEFGSTJzTmJE/RlFWdkhiUEtiUUE0/PQ" alt="airport" id="airports"></a>
+               </div>
+
+           </div>
+
+
+        </div>
+
+        </div>
+
+        <!------JavaScript for Toggle Menu------>
+        <script>
+            var navlinks = document.getElementById("navlinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navlinks.style.right = "-200px";
+            }
+        </script>
+
+        </body>
+        </html>

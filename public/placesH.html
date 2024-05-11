@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Website design</title>
+    <link rel="stylesheet" href="places3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <div>
+    <section class="header">
+       <nav>
+        <a href="/home"><img src="logo2.png"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="/home">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+                <li><form id="logout" action="/logout" method="post"><button type="logout" name="logout">LOGOUT</button></form><li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+       </nav> 
+    </div>
+    <div>
+        <pre>
+            <div class="text-box">
+                <h1>PLACES TO VISIT</h1>
+            </pre>
+        </div>
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="Charminar.jpg" alt="Example Image">
+            </div>
+            <div class="content">
+                <h1>Charminar</h1>
+                <h3>About</h3>
+                <br>
+                <p>Charminar is a beautiful example of Islamic architecture, with four minarets that rise to a height of 56 meters.</p>
+            </div>
+
+
+            <div class="buttons">
+                <button class="top-button">Location</button>
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="Birla.png" alt="Example Image">
+            </div>
+            <div class="content">
+                <h1>Birla Mandir</h1>
+
+                <h3>About</h3>
+                <br>
+                <p>The Birla Mandir complex  houses a temple dedicated to Buddha along with fresco paintings describing his life</p>
+            </div>
+
+            <div class="buttons">
+                <button class="top-button">Location</button>
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="Salar.jpg" alt="Example Image">
+            </div>
+            <div class="content">
+                <h1>Salar Jung Museum</h1>
+
+                <h3>About</h3>
+                <p>Salarjung Museum has a unique distinction as the third largest museum in India and has a worldwide fame for its biggest one-man collections of antiques</p>
+            </div>
+
+
+            <div class="buttons">
+                <button class="top-button">Location</button>
+               
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="ramoji.jpg" alt="Example Image">
+            </div>
+            <div class="content">
+                <h1>Ramoji Film City</h1>
+
+                <h3>About</h3>
+                <p>Visitors can learn all about the local film industry here, which is one of the largest in India.</p>
+            </div>
+
+
+
+            <div class="buttons">
+                <button class="top-button">Location</button>
+               
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="Golconda.jpg" alt="Example Image">
+            </div>
+            <div class="content">
+                <h1>Golconda Fort</h1>
+
+                <p>Golconda fortress rests on a granite hill 120 meters high while huge crenellated ramparts surround this structure</p>
+            </div>
+
+
+            <div class="buttons">
+                <button class="top-button">Location</button>
+               
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="mapp.png" alt="Example Image">
+            </div>
+            <div class="content">
+                <h1>Customize your trip</h1>
+
+                <p>Select your starting point : </p>
+            </div>
+
+
+            <div class="buttons">
+                <a href="hyderabad-rail-map.html"><button class="top-button">Railway Station</button></a>
+                <a href="hyderabad-air-map.html"><button class="top-button">Air Port</button></a>
+            </div>
+        </div>
+    <!------JavaScript for Toggle Menu------>
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

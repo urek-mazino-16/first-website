@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Tourism Website design</title>
+    <link rel="stylesheet" href="style9.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <div>
+    <section class="header">
+       <nav>
+        <a href="/home"><img src="logo2.png"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a = href="/home">HOME</a></li>
+                <li><a = href="about.html">ABOUT</a></li>
+                <li><a = href="contactus.html">CONTACT US</a></li>
+                <li><form id="logout" action="/logout" method="post"><button type="logout" name="logout">LOGOUT</button></form><li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+       </nav> 
+    </div>
+    <div>
+        <pre>
+            <div class="text-box">
+                <h1>PLACES TO VISIT</h1>
+                <!--<p>A guide for must visit places</p>-->
+            </pre>
+            </div>
+        
+        <!-----Popular City Menu----->
+        
+        <div class="cities">
+            <!-- <h1>Popular Cities</h1>
+            <p>Some of India's most frequently visited cities</p> -->
+
+            <div class = "row">
+                <div class="city-col">
+                    <img src="victoria.jpg">
+                    <h3>VICTORIA MEMORIAL</h3>
+                    <p> The Victoria Memorial is a large marble building, which is considered to be the pride of Kolkata. Built between 1906 and 1921, it is dedicated to the memory of Queen Victoria. Now, it is a museum and a popular tourist spot under the Ministry of Culture.      </p>
+                    </div>
+               <div class="city-col">
+                   <img src="fortwilliam.jpg">
+                  <h3>FORT WILLIAM KOLKATA</h3>
+                   <p>Fort William is a fort built in Kolkata on the eastern banks of the River Hooghly, the major distributary of Ganges. The magnificent structure is spread over 70.9 acres and is embellished with hundreds of arched windows that overlook lush green gardens. </p>
+               </div>
+               <div class="city-col">
+                   <img src="belur.jpg">
+                   <h3>BELUR MATH</h3>
+                   <p>Belur Mutt is the headquarters of the Ramakrishna Math and Mission, founded by Swami Vivekananda. Situated on the west bank of Hooghly River, the temple is prominent for its architecture that embraces Hindu, Christian and Islamic styles and stands as an icon of unity of all religions.</p> 
+               </div>
+           </div>
+
+           <div class="row2">
+               <div class="city-colu">
+                   <img src="howrah.jpg">
+                  <h3>HOWRAH BRIDGE</h3>
+                    <p>Located over the Hooghly river in West Bengal, Howrah Bridge or the Rabindra Setu is the main connection between Howrah and Kolkata. It is a cantilever bridge and is regarded as one of the busiest ones among them.</p>
+                    </div>
+               <div class="city-colu">
+                   <img src="indianmuseum.jpg">
+                   <h3>INDIAN MUSEUM</h3>
+                   <p>The Indian Museum is one of the oldest museums of the world boasting some of the most exquisite collections of ornaments, fossils, skeletons, antiques, armors, mummies and stunning Mughal paintings. </p>
+               </div>
+               <div class="city-colu">
+                   <img src="planmytrip.png"><h3>Plan My Trip</h3>
+                   <a href="kolkata-rail-map.html">Railways</a>
+                   <a href="kolkata-air-map.html">Airways</a>
+               </div>
+               
+           </div>
+         
+        
+        </div>
+        
+        </div>
+        
+        <!------JavaScript for Toggle Menu------>
+        <script>
+            var navlinks = document.getElementById("navlinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navlinks.style.right = "-200px";
+            }
+        </script>
+        
+        </body>
+        </html>

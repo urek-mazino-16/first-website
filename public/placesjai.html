@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Website design</title>
+    <link rel="stylesheet" href="places3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <div>
+    <section class="header">
+       <nav>
+        <a href="/home"><img src="logo2.png"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="/home">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+                <li><form id="logout" action="/logout" method="post"><button type="logout" name="logout">LOGOUT</button></form><li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+       </nav> 
+    </div>
+    <div>
+        <pre>
+            <div class="text-box">
+                <h1>PLACES TO VISIT</h1>
+            </pre>
+        </div>
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="amer.jpg" alt="Example Image">
+            </div>
+            <div class="content">
+                <h1>AMER FORT</h1>
+                <h3>About</h3>
+                <br>
+                <p>Cradled on the top of a hill near Jaipur lies the Amer Fort, one of the most magnificent palaces in India. Also commonly known as the Amber Fort, this majestic building with its maze-like passagesers.   </p>
+            </div>
+
+
+            <div class="buttons">
+                <button class="top-button">Location</a></button>
+                <!-- <div class="button-group">
+                <button> <a href="delhi-rail-map.html">Railways</a></button>
+                <button> <a href="delhi-air-map.html">Airways</a></button>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="jantarmantar.jpg" alt="Example Image">
+            </div>
+            <div class="content">
+                <h1>JANTAR MANTAR </h1>
+
+                <h3>About</h3>
+                <br>
+            <p>Located near the City Palace in the regal city of Jaipur, Jantar Mantar is the largest stone astronomical observatory in the world. Owing to its rich cultural, heritage and scientific value, Jantar Mantar in Jaipur has also been featured on UNESCO's list of World Heritage Sites </p>
+            </div>
+
+
+
+            <div class="buttons">
+                <button class="top-button">Location</button>
+                
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="hawa.jpg" alt="Example Image">
+            </div>
+            <div class="content">
+                <h1>HAWA MAHAL</h1>
+
+                <h3>About</h3>
+                <p>The massive edifice of Hawa Mahal stands at the intersection of the main road in Jaipur, Badi Chaupad and was built by Maharaja Sawai Pratap Singh in the year 1799. Hawa Mahal derives its name from its unique structure</p>
+            </div>
+
+
+            <div class="buttons">
+                <button class="top-button"><a href="itenary7.html">Location</a></button>
+                
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="citypalace.jpg" alt="Example Image">
+            </div>
+            <div class="content">
+                <h1>CITY PALACE</h1>
+
+                <h3>About</h3>
+                <p>The magnificent City Palace in Jaipur is one of the most famous tourist attractions located in the old part of the city. Built by Maharaja Sawai Jai Singh during the years 1729 to 1732, the vast complex of the palace occupied one-seventh of the walled city.</p>
+            </div>
+
+
+
+            <div class="buttons">
+                <button class="top-button"><a href="iternary.html">Location</a></button>
+               
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="albert.jpg" alt="Example Image">
+            </div>
+            <div class="content">
+                <h1>ALBERT HALL MUSEUM</h1>
+
+                <p>The magnificent City Palace in Jaipur is one of the most famous tourist attractions located in the old part of the city. Built by Maharaja Sawai Jai Singh during the years 1729 to 1732, the vast complex of the palace occupied one-seventh of the walled city </p>
+            </div>
+
+
+            <div class="buttons">
+                <button class="top-button">Location</button>
+               
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="mapp.png" alt="Example Image">
+            </div>
+            <div class="content">
+                <h1>Customize your trip</h1>
+
+                <p>Select your starting point : </p>
+            </div>
+
+
+            <div class="buttons">
+                <button class="top-button">Railway Station</button>
+                <button class="top-button">Air Port</button>
+            </div>
+        </div>
+        
+    <!------JavaScript for Toggle Menu------>
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
+

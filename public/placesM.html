@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Website design</title>
+    <link rel="stylesheet" href="places3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <div>
+    <section class="header">
+       <nav>
+        <a href="/home"><img src="logo2.png"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="/home">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+                <li><form id="logout" action="/logout" method="post"><button type="logout" name="logout">LOGOUT</button></form><li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+       </nav> 
+    </div>
+    <div>
+        <pre>
+            <div class="text-box">
+                <h1>PLACES TO VISIT</h1>
+            </pre>
+        </div>
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="marine.jpg" alt="Example Image">
+            </div>
+            <div class="content">
+                <h1>Marine Drive</h1>
+                <h3>About</h3>
+                <br>
+                <p>Bordering the Arabian Sea, this famous road is a popular spot for watching sunsets, and is gorgeous when lit up at night.</p>
+            </div>
+
+
+            <div class="buttons">
+                <button class="top-button">Location</a></button>
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="gate.jpg" alt="Example Image">
+            </div>
+            <div class="content">
+                <h1>Gateway of India</h1>
+
+                <h3>About</h3>
+                <br>
+                <p>Built in 1911 to welcome the King and Queen of England, this stone archway in Colaba is now a historic landmark.</p>
+            </div>
+
+
+
+            <div class="buttons">
+                <button class="top-button">Location</button>
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="siddhivinayak.jpg" alt="Example Image">
+            </div>
+            <div class="content">
+                <h1>Shree Siddhivinayak</h1>
+
+                <h3>About</h3>
+                <p>This temple is the most revered Lord Ganesh temple not only of Maharashtra but also of India.</p>
+            </div>
+
+
+            <div class="buttons">
+                <button class="top-button"><a href="itenary7.html">Location</a></button>
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="Bandra.jpg" alt="Example Image">
+            </div>
+            <div class="content">
+                <h1>Bandra-Worli Sea Link</h1>
+
+                <h3>About</h3>
+                <p>This is a bridge which links Mumbai’s suburbs to South Mumbai. It’s a very prestigious bridge which was opened in 2009.</p>
+            </div>
+
+
+
+            <div class="buttons">
+                <button class="top-button"><a href="iternary.html">Location</a></button>
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="terminus.jpg" alt="Example Image">
+            </div>
+            <div class="content">
+                <h1>Chhatrapati Shivaji Terminus</h1>
+
+                <p>India's most beautiful railway station is a masterpiece of Gothic architecture with stained-glass windows, towering spires, domed arches and buttresses and pillars with animal images carved into them.</p>
+            </div>
+
+
+            <div class="buttons">
+                <button class="top-button">Location</button>
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="mapp.png" alt="Example Image">
+            </div>
+            <div class="content">
+                <h1>Customize your trip</h1>
+
+                <p>Select your starting point : </p>
+            </div>
+
+
+            <div class="buttons">
+                <a href="mumbai-rail-map.html"><button class="top-button">Railway Station</button></a>
+                <a href="mumbai-air-map.html"><button class="top-button">Air Port</button></a>
+            </div>
+        </div>
+    <!------JavaScript for Toggle Menu------>
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
