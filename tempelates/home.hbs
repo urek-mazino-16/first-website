@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Website design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <div>
+        <section class="header">
+            <nav>
+                <a href="/home"><img src="logo2.png"></a>
+                <div class="nav-links" id="navlinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="/home">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contactus.html">CONTACT US</a></li>
+                        <li><form id="logout" action="/logout" method="post"><button type="logout" name="logout">LOGOUT</button></form><li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav> 
+            <pre>
+                <div class="text-box">
+                    <h2>Hello! {{naming}}</h2>
+                    <h1>TOUR INDIA</h1>
+                    
+                    <p>Tour India is your ultimate guide to exploring the heart and soul of cities around Incredible India. We invite you to embark on a journey of discovery,<br> immersing yourself in the rich tapestry of cultures, traditions and celebrations that make each city unique.</p>
+                    <a href="location.html" class="hero-btn">Search for Cities</a>
+                </pre>
+            </div>
+
+            <!--Popular City Menu-->
+            <section class="cities">
+                <h1>Popular Cities</h1>
+                <p>Some of India's most frequently visited cities</p>
+                <div class="row">
+                    <div class="city-col">
+                        <img src="delhi.png">
+                        <a href="delhi.html" class='city-style'><h3>Delhi NCR</h3></a>
+                        <p>Delhi, a city where ancient history and modernity coexist in a bustling metropolis of culture and contrasts.</p>
+                    </div>
+                    <div class="city-col">
+                        <img src="mumbai.png">
+                        <a href="mumbai.html" class='city-style'><h3>Mumbai</h3></a>
+                        <p>Mumbai, the city of dreams, where tradition meets modernity in a bustling metropolis by the Arabian Sea.</p>
+                    </div>
+                    <div class="city-col">
+                        <img src="hyderabad.png">
+                        <a href="hyderabad.html" class='city-style'><h3>Hyderabad</h3></a>
+                        <p>Hyderabad, the "City of Pearls," where ancient heritage blends seamlessly<br> with a burgeoning tech hub in the heart of South India.</p> 
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="city-colu">
+                        <img src="kolkata.png" >
+                        <a href="kolkata.html" class='city-style'><h3>Kolkata</h3></a>
+                        <p>Kolkata, the "Cultural Capital of India," where art, literature,<br> and rich heritage thrive amid the bustling urban energy.</p>
+                    </div>
+                    <div class="city-colu">
+                        <img src="jaipur1.png" >
+                        <a href="jaipur.html" class='city-style'><h3>Jaipur</h3></a>
+                        <p>Jaipur, the "Pink City," a regal masterpiece where history and tradition<br> are etched in every majestic palace and vibrant market.</p>
+                    </div>
+                    <div class="city-colu">
+                        <a href="form.html" class='city-style'><img src="plus.png" style="width: 175px;"></a>
+                        
+                        <br>
+                        <a href="form.html" class='city-style'><h3>ADD MORE</h3></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!---JavaScript for Toggle Menu--->
+        <script>
+            var navlinks = document.getElementById("navlinks");
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu() {
+                navlinks.style.right = "-200px";
+            }
+
+            // Slideshow functionality
+            var backgroundImages = ["cover.png", "garden.png", "haat.png"]; // Array of background image URLs
+            var currentIndex = 0;
+
+            function changeBackground() {
+                document.querySelector(".header").style.backgroundImage = "linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('" + backgroundImages[currentIndex] + "')";
+                currentIndex = (currentIndex + 1) % backgroundImages.length; // Increment index and loop back to 0 when it reaches the end
+                setTimeout(changeBackground, 1500); // Change image every 5 seconds
+            }
+
+            changeBackground(); // Start the slideshow
+        </script>
+    </body>
+    </html>
