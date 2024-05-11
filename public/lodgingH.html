@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Tourism Website design</title>
+    <link rel="stylesheet" href="style8.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+    <div>
+    <section class="header">
+       <nav>
+        <a href="index.html"><img src="logo2.png"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+
+            <ul>
+                <li><a = href="index.html">HOME</a></li>
+                <li><a = href="about.html">ABOUT</a></li>
+                <li><a = href="contactus.html">CONTACT US</a></li>
+                <li><form id="logout" action="/logout" method="post"><button type="logout" name="logout">LOGOUT</button></form><li>
+            </ul>
+
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+       </nav> 
+    </div>
+    <div>
+        <pre>
+            <div class="text-box">
+                <h1>LODGING</h1>
+                <p>Sensible living spaces that offer you an optimal quality stay at the best price</p>
+            </pre>
+            </div>
+        
+        <!-----Popular City Menu----->
+        
+        <div class="cities">
+            <!-- <h1>Popular Cities</h1>
+            <p>Some of India's most frequently visited cities</p> -->
+        
+            <div class = "row">
+                <div class="city-col">
+                    <a href="https://www.makemytrip.com/hotels/hyderabad.html"><img src="hotel.png"></a>
+                    <h3>Hotels</h3>
+                    <p>Find everything from 5 star hotels to sensible inns</p>
+                    </div>
+               <div class="city-col">
+                   <a href="https://www.airbnb.co.in/s/Hyderabad--India/homes?adults=1&place_id=ChIJx9Lr6tqZyzsRwvu6koO3k64&refinement_paths%5B%5D=%2Fhomes"><img src="airbnb.png"></a>
+                   <h3>AirBnB</h3>
+                   <p>For your short term stays</p>
+               </div>
+               <div class="city-col">
+                   <a href="https://yatradham.org/yatradham-destinations/telangana/hyderabad.html"><img src="dharamshala.png"></a>
+                   <h3>Dharamshalas
+                               </h3>
+                   <p>Affordable accommodation providing all basic amenities.</p> 
+               </div>
+           </div>
+        
+           <div class="row2">
+               <div class="city-colu">
+                   <a href="https://www.booking.com/searchresults.en-gb.html?ss=Hyderabad&ssne=Hyderabad&ssne_untouched=Hyderabad&theme_id=4&efdco=1&label=city-hyderabad-HSRnfMcEtAU20EzXNtNrMgS139092418053%3Apl%3Ata%3Ap1%3Ap2%3Aac%3Aap%3Aneg%3Afi%3Atikwd-1130823091%3Alp1007824%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YUBh8MufZgNFf8lRRSfobmc&sid=fe2b4e1a41cba7efd79b853245471bc5&aid=375025&lang=en-gb&sb=1&src_elem=sb&src=city&dest_id=-2097701&dest_type=city&group_adults=2&no_rooms=1&group_children=0&sb_travel_purpose=leisure&theme_id=4"><img src="hostel.png"></a>
+                   <h3>Hostel/PG</h3>
+                    <p>Smart living solutions for students</p>
+                    </div>
+               <div class="city-colu">
+                   <a href="https://housing.com/rent/flats-for-rent-in-hyderabad-telangana-P679xe73u28050522?paid=true&gad_source=1&gclid=Cj0KCQjw_qexBhCoARIsAFgBlet1dI_IlwMSjeyT3NpVG6vwfeOJMAEQAuNpI1n0s3NM7s13_obXLMkaArcjEALw_wcB"><img src="rental.png"></a>
+                   <h3>Rooms for rent</h3>
+                   <p>For your long term stays</p>
+               </div>
+               <!-- <div class="city-colu">
+                   <img src="amritsar.png">
+                   <a href="webp6.html"><h3>Amritsar</h3></a>
+                   <p>...Telangana's Capital...<br>...description...</p> 
+               </div> -->
+               
+           </div>
+         
+        
+        </div>
+        
+        </div>
+        
+        <!------JavaScript for Toggle Menu------>
+        <script>
+            var navlinks = document.getElementById("navlinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navlinks.style.right = "-200px";
+            }
+        </script>
+        
+        </body>
+        </html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Tourism Website design</title>
+    <link rel="stylesheet" href="style9.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+    <div>
+    <section class="header">
+       <nav>
+        <a href="/home"><img src="logo2.png"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+
+            <ul>
+                <li><a = href="/home">HOME</a></li>
+                <li><a = href="about.html">ABOUT</a></li>
+                <li><a = href="contactus.html">CONTACT US</a></li>
+                <li><form id="logout" action="/logout" method="post"><button type="logout" name="logout">LOGOUT</button></form><li>
+            </ul>
+
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+       </nav> 
+    </div>
+    <div>
+        <pre>
+            <div class="text-box">
+                <h1>LOCAL FESTS</h1>
+                <!--<p>Tour India is your ultimate guide to exploring the heart and soul of cities around Incredible India. We invite you to embark on a journey of discovery,<br> immersing yourself in the rich tapestry of cultures, traditions and celebrations that make each city unique.</p>-->
+            </pre>
+            </div>
+        
+        <!-----Popular City Menu----->
+        
+        <div class="cities">
+            <!-- <h1>Popular Cities</h1>
+            <p>Some of India's most frequently visited cities</p> -->
+        
+            <div class = "row">
+                <div class="city-col">
+                    <img src="elephant.jpg">
+                    <h3>ELEPHANT FESTIVAL</h3>
+                    <p>The Elephant festival in the month of February and March, also marks an important occasion in Jaipur every year. This truly amazing festival is held on the full moon day of ‘Phalgun Purnima.’ Elephant polo and elephant dances are the highlight of this festival.</p>
+                    </div>
+               <div class="city-col">
+                   <img src="teej.jpg">
+                   <h3>TEEJ FESTIVAL</h3>
+                   <p>Teej is an important and the most rejoiced festivals of Jaipur. This festival sees a lot of women dressing up in lovely traditional attires and jewellery. They also apply henna on their hands. Everyone gathers in temples where Goddess Parvati is worshipped.
+</p>
+               </div>
+               <div class="city-col">
+                   <img src="kite.jpg">
+                   <h3>KITE FESTIVAL</h3>
+                   <p>The kite festival is held in Jaipur on January 14 every year. This festivals of Jaipur is marked by the presence of a myriad kites in the skies. Toward dusk, the skies are alive with million kites. Lamps and Fireworks light up the entire city. </p> 
+               </div>
+           </div>
+        
+           <div class="row2">
+               <div class="city-colu">
+                   <img src="jaipurlit.jpg">
+                   <h3>JAIPUR LITERATURE FESTIVAL</h3>
+                    <p>The Jaipur Literature Festival which began in 2006 has now become the largest literary festival conducted in the Asia Pacific. This five-day festival is attended by lakhs of people from both national as well as international boundaries. </p>
+                    </div>
+               <div class="city-colu">
+                   <img src="gangaur.jpg">
+                   <h3>GANGAUR FESTIVAL</h3>
+                   <p>The most colourful of festivals of Jaipur, the Gangaur Festival is celebrated in Rajasthan. This festival is celebrated from March to April.
+</p>
+               </div>
+               <!-- <div class="city-colu">
+                   <img src="amritsar.png">
+                   <a href="webp6.html"><h3>Amritsar</h3></a>
+                   <p>...Telangana's Capital...<br>...description...</p> 
+               </div> -->
+               
+           </div>
+         
+        
+        </div>
+        
+        </div>
+        
+        <!------JavaScript for Toggle Menu------>
+        <script>
+            var navlinks = document.getElementById("navlinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navlinks.style.right = "-200px";
+            }
+        </script>
+        
+        </body>
+        </html>

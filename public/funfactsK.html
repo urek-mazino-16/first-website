@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Tourism Website design</title>
+    <link rel="stylesheet" href="style7.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <div>
+    <section class="header">
+       <nav>
+        <a href="/home"><img src="logo2.png"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a = href="/home">HOME</a></li>
+                <li><a = href="about.html">ABOUT</a></li>
+                <li><a = href="contactus.html">CONTACT US</a></li>
+                <li><form id="logout" action="/logout" method="post"><button type="logout" name="logout">LOGOUT</button></form><li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+       </nav> 
+       
+    <pre>
+    <div class="text-box">
+        <h1>TRIVIA TIDBITS</h1>
+    </pre>
+    <pre>
+        <div class="something">
+            <br><br><br><Br><br>
+        <p> *   Until 1911, Kolkata was the capital of India due to its trade importance during the British Rule in India. Later, Delhi was made the capital of India. </p>
+        <p> *	 The Eden Gardens Cricket Stadium has the third most sitting capacity in the world with around 67,000 people.</p>
+        <p> *   The ever classic Tram of Kolkata has been serving the city since 1902. Around 125 trams are running by covering 25 routes.</p>
+        <p> *   It has trams, it has metros, it has taxis, but Kolkata still depends on its traditional hand-pulled rickshaws to commute, the only one in India.</p>
+        <p> *	 Kolkata Book Fair is said to be the most attended book fair in the world. With around 2 million visitors, this Fair is well known for its non-trade book fair.</p>
+        <p> *	 Kolkata is home to India’s first newspaper- the Bengal Gazette, which started publishing from the city in 1780.</p>
+        <p> *	 Although Saree is worn throughout India, when it comes to the traditional Indian sarees, the Bengali sarees have a unique place, and Kolkata is considered the most affluent market of Bengali sarees.</p>
+        </div> 
+    </pre>
+    </div>
+<!------JavaScript for Toggle Menu------>
+<script>
+    var navlinks = document.getElementById("navlinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navlinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

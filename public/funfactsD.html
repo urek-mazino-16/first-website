@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Tourism Website design</title>
+    <link rel="stylesheet" href="style7.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+    <div>
+    <section class="header">
+       <nav>
+        <a href="/home"><img src="logo2.png"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+
+            <ul>
+                <li><a = href="/home">HOME</a></li>
+                <li><a = href="about.html">ABOUT</a></li>
+                <li><a = href="contactus.html">CONTACT US</a></li>
+                <li><form id="logout" action="/logout" method="post"><button type="logout" name="logout">LOGOUT</button></form><li>
+            </ul>
+
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+       </nav> 
+       
+    <pre>
+    <div class="text-box">
+        <h1>TRIVIA TIDBITS</h1>
+    </pre>
+    <pre>
+        <div class="something">
+            <br><br><br><Br><br>
+        <p> *	Historical Significance: Delhi is one of the oldest cities in the world, with a history dating back over 2,500 years.<br> It has been the capital of several empires, including the Maurya, Mughal, and British Empires.</p>
+        <p> *	Multiple Capitals: Delhi is unique in having been the capital of both ancient and modern India.<br> It served as the capital of various Indian empires and later became the capital of the Republic of India in 1950.</p>
+        <p> *	Diverse Culture: Delhi is a melting pot of cultures and religions. It's known for its diverse population,<br> which includes people from all over India and the world, resulting in a rich cultural tapestry.</p>
+        <p> *   UNESCO World Heritage Sites: Delhi boasts several UNESCO World Heritage Sites, including the Red Fort,<br> Qutub Minar, and Humayun's Tomb, showcasing its historical and architectural significance.</p>
+        <p> *	Street Food Paradise: Delhi is famous for its street food, offering a wide variety of delicious snacks<br> and dishes like chaat, kebabs, and parathas. Old Delhi, in particular, is a food lover's paradise.</p>
+        <p> *	Political Hub: As the capital of India, Delhi is the center of political power in the country.<br> It houses the Indian Parliament, the President's Residence (Rashtrapati Bhavan), and the Supreme Court.</p>
+        <p> *	Educational Hub: Delhi is home to some of India's most prestigious educational institutions,<br> including the University of Delhi, Jawaharlal Nehru University, and the Indian Institute of Technology (IIT) Delhi.</p>
+        </div> 
+    </pre>
+    </div>
+<!------JavaScript for Toggle Menu------>
+<script>
+    var navlinks = document.getElementById("navlinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navlinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
+

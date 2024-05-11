@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Tourism Website design</title>
+    <link rel="stylesheet" href="style7.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+    <div>
+    <section class="header">
+       <nav>
+        <a href="/home"><img src="logo2.png"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+
+            <ul>
+                <li><a = href="/home">HOME</a></li>
+                <li><a = href="about.html">ABOUT</a></li>
+                <li><a = href="contactus.html">CONTACT US</a></li>
+                <li><form id="logout" action="/logout" method="post"><button type="logout" name="logout">LOGOUT</button></form><li>
+            </ul>
+
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+       </nav> 
+       
+    <pre>
+    <div class="text-box">
+        <h1>TRIVIA TIDBITS</h1>
+    </pre>
+    <pre>
+        <div class="something">
+            <br><br><br><Br><br>
+        <p> *	Mumbai was earlier called as Bombay. The city was ruled by the Portuguese back in the day.</p>
+        <p> *	Initially, Mumbai was made up of 7 different islands – Colaba, Mazagaon, Little Colaba, Parel, Mahim, Isle of Bombay, and Worli.<br> However, between the years of 1784 and 1845, British engineers brought all these 7 islands together and thereby unified it to be one large landmass.</p>
+        <p> *	India’s 1st Five-star hotel is the Taj Mahal Palace which is located in Colaba, Mumbai.<br> Built in the year 1903, it was the very first hotel to provide exotic offerings to its guests.</p>
+        <p> *   The Juhu Aerodrome was India's first civil aviation airport. JRD Tata landed at the aerodrome in 1932 <br> It was also used as the main airport during World War 2.</p>
+        <p> *	Every year between the months of October – March you can see swamps of flamingos migrating in the Bhandup and Sewri regions of Mumbai..</p>
+        <p> *	The Bandra Worli Sea Link is made up of 90,000 tonnes of cement and steel wire which is equal to the earth’s girt.<br> This is bridge is over the water that connects point endpoints of Bombay – Bandra, and worli.</p>
+        </div> 
+    </pre>
+    </div>
+<!------JavaScript for Toggle Menu------>
+<script>
+    var navlinks = document.getElementById("navlinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navlinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
+

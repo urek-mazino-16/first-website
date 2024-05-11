@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Website design</title>
+    <link rel="stylesheet" href="places3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <div>
+    <section class="header">
+       <nav>
+        <a href="/home"><img src="logo2.png"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="/home">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+                <li><form id="logout" action="/logout" method="post"><button type="logout" name="logout">LOGOUT</button></form><li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+       </nav> 
+    </div>
+    <div>
+        <pre>
+            <div class="text-box">
+                <h1>Lodgings</h1>
+                <p>Sensible living spaces that offer you an optimal quality stay at the best price</p>
+            </pre>
+        </div>
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="the_ashok.avif" alt="">
+            </div>
+            <div class="content">
+                <h1>The Ashok</h1>
+            </div>
+            <div class="buttons">
+                <button class="top-button"><a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201106120942397721&_uCurrency=INR&checkin=04252024&checkout=04282024&city=CTDEL&country=IN&lat=28.597&lng=77.196&locusId=CTDEL&locusType=city&rank=1&regionNearByExp=3&roomStayQualifier=2e0e&rsc=1e2e0e&searchText=Delhi&viewType=PREMIUM&mtkeys=6790981796688561690">Booking</a></button>
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="Hotel Pinky Villa.avif" alt="">
+            </div>
+            <div class="content">
+                <h1>Hotel Pinky Villa </h1>
+            </div>
+            <div class="buttons">
+                <button class="top-button"><a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201812072045069195&_uCurrency=INR&checkin=04252024&checkout=04282024&city=CTDEL&country=IN&lat=28.64205&lng=77.21169&locusId=CTDEL&locusType=city&rank=3&regionNearByExp=3&roomStayQualifier=2e0e&rsc=1e2e0e&searchText=Delhi&viewType=BUDGET&mtkeys=9140670542797544554">Booking</a></button>
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="Hotel Imperial View.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>Hotel Imperial View</h1>
+            </div>
+            <div class="buttons">
+                <button class="top-button"><a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=202011112300267549&_uCurrency=INR&checkin=04252024&checkout=04282024&city=CTDEL&country=IN&lat=28.64117&lng=77.21059&locusId=CTDEL&locusType=city&rank=4&regionNearByExp=3&roomStayQualifier=2e0e&rsc=1e2e0e&searchText=Delhi&mtkeys=-2763347719257158928">Booking</a></button>
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="Hotel Viva Palace.avif" alt="">
+            </div>
+            <div class="content">
+                <h1>Hotel Viva Palace</h1>
+            </div>
+            <div class="buttons">
+                <button class="top-button"><a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201802231746016635&_uCurrency=INR&checkin=04252024&checkout=04282024&city=CTDEL&country=IN&lat=28.54488&lng=77.12323&locusId=CTDEL&locusType=city&rank=5&regionNearByExp=3&roomStayQualifier=2e0e&rsc=1e2e0e&searchText=Delhi&viewType=BUDGET&mtkeys=-6106352890195451174">Booking</a></button>
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="Hotel Peace Point.avif" alt="">
+            </div>
+            <div class="content">
+                <h1>Hotel Peace Point</h1>
+            </div>
+            <div class="buttons">
+                <button class="top-button"><a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201406242015079234&_uCurrency=INR&checkin=04252024&checkout=04282024&city=CTDEL&country=IN&lat=28.64477&lng=77.21578&locusId=CTDEL&locusType=city&rank=6&regionNearByExp=3&roomStayQualifier=2e0e&rsc=1e2e0e&searchText=Delhi&viewType=BUDGET&mtkeys=3297643729977101596">Booking</a></button>
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="Hotel Z Suite.avif" alt="">
+            </div>
+            <div class="content">
+                <h1>Hotel Z Suite</h1>
+            </div>
+            <div class="buttons">
+                <button class="top-button"><a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201907231814375253&_uCurrency=INR&checkin=04252024&checkout=04282024&city=CTDEL&country=IN&lat=28.55105&lng=77.13034&locusId=CTDEL&locusType=city&rank=18&regionNearByExp=3&roomStayQualifier=2e0e&rsc=1e2e0e&searchText=Delhi&viewType=BUDGET&mtkeys=-4305566347855212818">Booking</a></button>
+            </div>
+        </div>
+        
+    <!------JavaScript for Toggle Menu------>
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
+

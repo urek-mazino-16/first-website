@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Tourism Website design</title>
+    <link rel="stylesheet" href="style7.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+    <div>
+    <section class="header">
+       <nav>
+        <a href="/home"><img src="logo2.png"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+
+            <ul>
+                <li><a = href="/home">HOME</a></li>
+                <li><a = href="about.html">ABOUT</a></li>
+                <li><a = href="contactus.html">CONTACT US</a></li>
+                <li><form id="logout" action="/logout" method="post"><button type="logout" name="logout">LOGOUT</button></form><li>
+            </ul>
+
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+       </nav> 
+       
+    <pre>
+    <div class="text-box">
+        <h1>TRIVIA TIDBITS</h1>
+    </pre>
+    <pre>
+        <div class="something">
+            <br><br><br><Br><br>
+        <p> *	Ramoji Film City being the world’s largest film studio is quite an interesting fact about Hyderabad.</p>
+        <p> *	Who hasn’t heard of Koh-i-Noor, the most precious diamond in the world? <br>However, another interesting fact about Hyderabad is that it is the home of this world-famous jewel</p>
+        <p> *	but the Nizam of Hyderabad was India’s richest person, and the world’s sixth-richest.<br>He had a paperweight worth £50 million, made of diamond.</p>
+        <p> *   Hyderabad was a princely state and wasn’t a part of the newly independent India in 1947. .</p>
+        <p> *	The city has more than 20 lakes which are a favourite among both locals and tourists.<br> Some of the ones you can visit are – Hussain Sagar, Osman Sagar, Shamirpet Lake and Himayat Sagar.</p>
+        <p> *	Tennis in India is synonymous with Sania Mirza.<br>The Indian Tennis Sensation had won six Grand Slam titles in her career of ten years</p>
+        <p> *	Charminar was actually built by Quli Qutb Shah as a sign of prayer to god, to keep his citizens and the kingdom free from the deadly plague.</p>
+        </div> 
+    </pre>
+    </div>
+<!------JavaScript for Toggle Menu------>
+<script>
+    var navlinks = document.getElementById("navlinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navlinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
+

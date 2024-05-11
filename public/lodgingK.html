@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Website design</title>
+    <link rel="stylesheet" href="places3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <div>
+    <section class="header">
+       <nav>
+        <a href="/home"><img src="logo2.png"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="/home">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+                <li><form id="logout" action="/logout" method="post"><button type="logout" name="logout">LOGOUT</button></form><li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+       </nav> 
+    </div>
+    <div>
+        <pre>
+            <div class="text-box">
+                <h1>HOTELS TO VISIT</h1>
+            </pre>
+        </div>
+        <div class="horizontal-section">
+            <div class="image">
+   <img src="h1.jpg" alt="Example Image" style="width: 400px;">
+            </div>
+            <div class="content">
+                <h1>Fairfield by Marriott Kolkata</h1>
+                <h3>About</h3>
+                <br>
+                <p>Located in Kolkata, 7.6 miles from Sealdah Train Station, Fairfield by Marriott Kolkata provides accommodations with free bikes, free private parking, a fitness center and a shared lounge..</p>
+            </div>
+
+
+            <div class="buttons">
+                <button class="top-button">BOOKINGS</a></button>
+                <div class="button-group">
+                
+                </div>
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="h2.jpg" alt="Example Image">
+            </div>
+            <div class="content">
+                <h1>OYO Hotel Happiness Near Acropolis Mall</h1>
+
+                <h3>About</h3>
+                <br>
+                <p>Park Street Metro Station is 5 miles from OYO Hotel Happiness Near Acropolis Mall, while Indian Museum is 5 miles away. The nearest airport is Netaji Subhash Chandra Bose International Airport, 12 miles from the accommodation.</p>
+            </div>
+
+
+
+            <div class="buttons">
+                <button class="top-button">BOOKINGS</button>
+                <div class="button-group">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="h3.jpg" alt="Example Image">
+            </div>
+            <div class="content">
+                <h1>ibis Kolkata Rajarhat - An Accor Brand</h1>
+
+                <h3>About</h3>
+                <p>The rooms come with air conditioning, a flat-screen TV with cable channels, a coffee machine, a shower, a hairdryer and a desk. At the hotel rooms include bed linen and towels.
+
+The daily breakfast offers buffet, continental or Italian options..</p>
+            </div>
+
+<div class="buttons">
+                <button class="top-button"><a href="iternary.html">Plan My Trip</a></button>
+                <div class="button-group">
+                    <button> <a href="kolkata-rail-map.html">Railways</a></button>          <button> <a href="kolkata-air-map.html">Airways</a></button>
+                </div>
+            </div>
+        </div>
+
+            
+         
+      
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="h4.jpg" alt="Example Image">
+            </div>
+            <div class="content">
+                <h1>Goroomgo Sanjoy Guest House Ruby Tagore Park Kolkata</h1>
+
+                <h3>About</h3>
+                <p>Park Street Metro Station is 4.4 miles from the accommodation, while Kalighat Kali Temple is 4.4 miles away. The nearest airport is Netaji Subhash Chandra Bose International Airport, 11 miles from Goroomgo Sanjoy Guest House Ruby Tagore Park Kolkata.</p>
+            </div>
+
+
+
+            <div class="buttons">
+                <button class="top-button"><a href="iternary.html">Plan My Trip</a></button>
+                <div class="button-group">
+                    <button> <a href="kolkata-rail-map.html">Railways</a></button>          <button> <a href="kolkata-air-map.html">Airways</a></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="horizontal-section">
+            <div class="image">
+                <img src="h5.jpg" alt="Example Image">
+            </div>
+            <div class="content">
+                <h1>FabExpress Golden Stays</h1>
+                  <h3>About</h3>
+                <p>Park Street Metro Station is 1.8 miles from FabExpress Golden Stays, while Victoria Memorial is 2 miles away. The nearest airport is Netaji Subhash Chandra Bose International Airport, 11 miles from the accommodation.</p>
+            </div>
+
+
+            <div class="buttons">
+                <button class="top-button">Plan My Trip</button>
+                <div class="button-group">
+                    <button> <a href="kolkata-rail-map.html">Railways</a></button>          <button> <a href="kolkata-air-map.html">Airways</a></button>
+                </div>
+            </div>
+        </div>
+    <!------JavaScript for Toggle Menu------>
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

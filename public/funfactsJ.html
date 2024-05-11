@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Tourism Website design</title>
+    <link rel="stylesheet" href="style7.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+    <div>
+    <section class="header">
+       <nav>
+        <a href="/home"><img src="logo2.png"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+
+            <ul>
+                <li><a = href="/home">HOME</a></li>
+                <li><a = href="about.html">ABOUT</a></li>
+                <li><a = href="contactus.html">CONTACT US</a></li>
+                <li><form id="logout" action="/logout" method="post"><button type="logout" name="logout">LOGOUT</button></form><li>
+            </ul>
+
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+       </nav> 
+       
+    <pre>
+    <div class="text-box">
+        <h1>TRIVIA TIDBITS</h1>
+    </pre>
+    <pre>
+        <div class="something">
+            <br><br><br><Br><br>
+          <p> *  The whole Jaipur city was surrounded by a 6 & 3 meter (height & width) wall with eight gates in all four directions. Now, this is the Pink City area of Jaipur (Old Jaipur) I am talking about.   </p>
+          <p> *  Did you know Jaipur still has a Maharaja? His name is Padmanabh Singh, and he was crowned Maharaja of Jaipur at a tender young age of 13. You will not find him win battles anymore, but instead, you will find him grace the cover of a fashion magazine, or on Instagram, striking an elegant pose in the royal interiors of Jaipur City Palace.  </p>
+          <p> *  If you are searching for the most expensive hotel stay in the world, than it’s in Jaipur. The Raj Mahal Palace hotel in Amer Jaipur has a Suite room (presidential suite) with a room tariff of $50,000 per night. </p>
+          <p> *  Also Jaipur is the only city where there are 5 palaces and they are Jaipur City Palace, Rambagh Palace (Taj Rambagh Palace Hotel), Samode Haveli. Within 50 km of Jaipur, there are even more palaces such as Chomu Palace, Shahpura Palace and Samode Palace.           </p>
+          <p> *  Jaipur has many famous temples, but one of these temples is famous due to its monkeys, and this temple is called Galtaji Monkey Temple. Galtaji is actually a temple situated 10 km from Jaipur, and this temple has a very picturesque location.           </p>
+        </div> 
+    </pre>
+    </div>
+<!------JavaScript for Toggle Menu------>
+<script>
+    var navlinks = document.getElementById("navlinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navlinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

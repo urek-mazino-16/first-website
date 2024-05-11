@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Shippori Mincho B1', serif;
+}
+.header{
+    min-height: 62vh;
+    width: 100%;
+
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 24px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ffb300;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    color: #000;
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #000;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #ffb300;
+    background: #ffb300;
+    transition: 1s; 
+}
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #ffb300;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 10px;
+    }
+}
+
+.horizontal-section {
+    display: flex; /* Use flexbox to arrange items horizontally */
+    align-items: center; /* Align items vertically */
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    height: 305px;
+    background-color: #f0f0f0;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    margin: 20px;
+    padding: 20px;
+}
+.image {
+    flex: 0 0 calc(25% - 5px); /* Take up remaining space */
+    padding: 20px;
+    border-radius: 15px;
+    margin-right: 5px;
+}
+.image img {
+    max-width: 150%;
+    height: 270px;
+    display: block;
+    border-radius: 15px;
+}
+.buttons {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Change from flex-start to center */
+    align-items: flex-end; /* Align items to the right */
+    /* margin-top: 170px; */
+}
+
+/* .buttons{
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 170px;
+} */
+.top-button {
+    width: 410px;
+    height: 80px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    background-color: #bdb7ab;/*13b3ac   #dcbd75e6*/
+    font-family: serif;
+}
+
+.top-button a {
+  color: white; /* Set the color to white */
+  text-decoration: none; /* Remove underline */
+}
+
+.button-group button:first-child{
+  margin-right: 7.5px;
+  margin-left: auto;
+}
+.top-button:first-child{
+  margin-left: auto;
+}
+.buttons button a {
+  color:#fff;
+}
+.buttons button{
+
+    text-align: center; 
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.buttons button:hover{
+    background-color: #685b42;
+    ;
+}
+.content{
+  margin-left: 100px;
+  margin-bottom: 40px;
+  font-size: large;
+  color: black;
+}
+h1{
+  margin-bottom: 10px;
+}
+
+.text{
+  font-size: 20px;
+  justify-content: space-between;
+}
+
+
+.horizontal-section {
+  position: relative; 
+}
+
+

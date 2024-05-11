@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stylish Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: linear-gradient(rgba(79, 90, 68, 0.7),rgba(199, 194, 136, 0.789)),url(form.png); 
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    .container {
+        max-width: 400px;
+        margin: 50px auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea,
+    select {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color:rgb(20, 114, 186);
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    }
+    input[type="submit"]:hover {
+        background-color: lightpink;
+    }
+    .submit{
+        margin-left: 150px;
+        width: 100px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Add your city...</h2>
+    <form action="/form" method="post">
+
+        <label for="name">Name : </label>
+        <br><br>
+
+        <label for="email">Add your email..</label>
+        <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+        <label for="city">Name of the city...</label>
+        <input type="text" id="city" name="city" placeholder="City name.." required>
+
+
+        <h3>FAMOUS PLACES..</h3>
+
+
+        <label for="place">Name of the famous places..</label>
+        <input type="text" id="place" name="place" placeholder="Name of the Place .." required>
+
+        <label for="placedescription">Place description...</label>
+        <textarea id="placedescription" name="placedescription" placeholder="Write something.." style="height:200px" required></textarea>
+
+        <label for="placeurl">Link of image</label>
+        <input type="url" id="placeurl" name="placeurl" required style="width: 270px;">
+
+
+        <h3>LOCAL FESTS..</h3>
+
+        <label for="fest">Add the local fests....</label>
+        <input type="text" id="fest" name="fest" placeholder="Subject.." required>
+
+        <label for="festdescription">Add your description...</label>
+        <textarea id="festdescription" name="festdescription" placeholder="Write something.." style="height:200px" required></textarea>
+
+        <label for="festurl">Link of the fest</label>
+        <input type="url" id="festurl" name="festurl" required style="width: 250px;">
+
+
+        <br><br>
+
+
+        <button type="form" class="form">Submit</button>
+    </form>
+</div>
+</body>
+</html>

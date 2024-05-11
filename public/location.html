@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search city page</title>
+    <style>
+        body {
+            font-family: 'Shippori Mincho B1', serif;
+            background-image: url('https://imgs.search.brave.com/Hw-QVP-dV4oNJqbPaiFgj1ZIwfVIwNg3zWpBu_qKmc0/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtYmxvZy50cmVl/Ym8uY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDE4LzA4L0Rh/cmplZWxpbmcuanBn');
+            background-repeat: no-repeat;
+            background-size: 100% 950px;
+        }
+        .container {
+            position: fixed;
+            top: -100%;
+            left: 40%;
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: top 0.5s;
+            height: 450px
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+        }
+        .form-group button {
+            background: #333;
+            color: #000;
+            border: 0;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .container{
+            font-size: large;
+        }
+        .header{
+    min-height: 100vh;
+    width: 100%;
+
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 13px;
+    list-style: none;
+    display: inline-block;
+    padding: 8px;
+    position: relative;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ffb300;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+input{
+    width: 500px;
+    height: 25px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+    </style> 
+</head>
+<body>
+    <div>
+        <section class="header">
+            <nav>
+             <a href="/home"><img src="logo2.png"></a>
+             <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav> 
+         
+        </section>
+    </div>
+    <div class="container">
+        <form id="myForm" method="get">
+        <div class="form-group">
+                <label for="inputField"><h2>Search for city</h2></label>
+                <br><br><br>
+                <select id="inputField" name="option" style="width: 300px; height: 30px;">
+                <option value="default">Select an option</option>  
+                <option value="delhi.html">Delhi</option>
+                <option value="hyderabad.html">Hyderabad</option>
+                <option value="kolkata.html">Kolkata</option>
+                <option value="mumbai.html">Mumbai</option>
+                <option value="jaipur.html">Jaipur</option>
+        </select>
+            </div>
+            <br><br><br><br><br>
+            <button type="submit">Search</button>
+        </form>
+        
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        animateContainer();
+    });
+
+    function animateContainer() {
+        $(".container").css('top', '50%'); 
+        $(".container").animate({'top': '30%'}, 1500);
+    }
+</script>
+
+<script>
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+        var searched = document.getElementById('inputField').value;
+        if(searched=="default")
+        alert("Please select an option")
+        else
+        this.action = searched;
+    });
+</script>
+
+</body>
+</html>
