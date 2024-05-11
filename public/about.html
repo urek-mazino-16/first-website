@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Tourism Website design</title>
+    <link rel="stylesheet" href="styleabout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+
+</head>
+<body>
+    <div>
+    <section class="header">
+       <nav>
+        <a href="/home"><img src="logo2.png"></a>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+
+            <ul>
+                <li><a = href="/home">HOME</a></li>
+                <li><a = href="about.html">ABOUT</a></li>
+                <li><a = href="contactus.html">CONTACT US</a></li>
+                <li><form id="logout" action="/logout" method="post"><button type="logout" name="logout">LOGOUT</button></form><li>
+            </ul>
+
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+       </nav> 
+    <pre>
+    <div class="text-box">
+        <h1>ABOUT US</h1>
+        <p>At Tour India, we have meticulously gathered, organized, and presented a wealth of information about every city in India,<br> ensuring that your travel experiences are not only seamless but also deeply enriching.<br> Our website is your gateway to uncovering the historical treasures, cultural marvels, culinary delights,<br> and contemporary attractions that make each Indian city a unique masterpiece.</p>
+        
+    </pre>
+    </div>
+</section>
+
+</div>
+
+<!------JavaScript for Toggle Menu------>
+<script>
+    var navlinks = document.getElementById("navlinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navlinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
